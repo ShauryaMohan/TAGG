@@ -1,24 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {useEffect, useState} from 'react';
+import HomePage from './Pages/HomePage'
+import { auth} from './firebase/firebase.utils'
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const[user, setUser] = useState(null)
+  const[page, setPage] = useState("home")
+
+
+
+  const route = () => {
+    switch(page){
+      case "home": return <HomePage setPage={setPage} user={user}/>
+      case "submit": return <div>submit</div>
+      case "game":  return <div>Play</div>
+      default: return <div>error</div>
+    }
+  }
+
+  
+  useEffect( () => {var unsuscribe = null;
+                    unsuscribe = auth.onAuthStateChanged(user => setUser(user))
+                    return function cleanup(){
+                      unsuscribe();
+                    }; } )
+
+  return (<div>
+    { route()
+    }
     </div>
   );
 }
