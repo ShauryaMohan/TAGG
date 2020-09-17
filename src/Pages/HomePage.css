@@ -9,23 +9,27 @@
 }
 
 .header {
+    
     float: right;
     height: 10%;
     position: absolute;
     top: 0;
+    right: 0;
     width: auto;
+    
 }
 
 .header p {
-    color: rgb(18, 123, 175);
-    margin-right: 10px;
+    color: rgb(19, 123, 175);
+    margin-right: 20px;
+    cursor: pointer;
 }
 
 .TitleContainer {
     width: 250px;
     position: absolute;
     top: 0;
-    height: 80%;
+    height: 70%;
     display: flex;
     text-align: center;
     overflow: hidden;
@@ -39,10 +43,29 @@
 
 .ButtonContainer {
     position: absolute;
-    top: 80%;
-    height: 20%;
-    display: inline-flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    top: 70%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
     width: 250px;
 }
+
+.rounded-button {
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    font-family: cursive;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(170, 23, 200);
+    border: none;
+    height: 40px;
+    outline: none;
+    margin-top: 10px;
+    align-self: center;
+  }
+
+  .rounded-button:hover {
+      background-color: rgb(112, 8, 131);
+  }

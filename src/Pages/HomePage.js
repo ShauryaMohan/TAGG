@@ -12,7 +12,9 @@ function HomePage({setPage, user}) {
     }
 
     return <div className="HomePageContainer">
-        <div className="header"><p onClick={handleSigning}>{user ? "Sign Out" : "Sign In"}</p></div>
+        <div className="header">
+            <p onClick={ () => {handleSigning()}}>{user ? "Sign Out" : "Sign In"}</p>
+        </div>
         <div className="TitleContainer">
             <p>THE AARUSHI GUPTA GAME</p>
         </div>

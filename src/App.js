@@ -1,5 +1,6 @@
 import React, {useEffect, useState} from 'react';
 import HomePage from './Pages/HomePage'
+import SubmitForm from './Pages/SubmitForm';
 import { auth} from './firebase/firebase.utils'
 import './App.css';
 
@@ -12,7 +13,7 @@ function App() {
   const route = () => {
     switch(page){
       case "home": return <HomePage setPage={setPage} user={user}/>
-      case "submit": return <div>submit</div>
+      case "submit": return <SubmitForm setPage={setPage} user={user}/>
       case "game":  return <div>Play</div>
       default: return <div>error</div>
     }
