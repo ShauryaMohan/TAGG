@@ -40,16 +40,17 @@
     background-color: transparent;
     border: none;
     border-bottom: 2px solid rgb(170, 23, 200);
-    margin: 20px 0px;
+    margin: 15px 0px;
     color: white;
     outline: none;
+    font-family: cursive;
 }
 
 .wrapper .inputField::placeholder {
-    color: white;
+    color: rgb(200, 200, 200);
 }
 .wrapper .memoryField::placeholder {
-    color: white;
+    color: rgb(200, 200, 200);
 }
 
 .wrapper .memoryField {
@@ -75,6 +76,10 @@ label {
 
 }
 
+label:hover {
+    background-color:  rgb(112, 8, 131);
+}
+
 .submitButton {
     border: none;
     background-color:  rgb(170, 23, 200);
@@ -87,4 +92,8 @@ label {
     margin-top: 20px;
 
 
+}
+
+.submitButton:hover {
+    background-color:  rgb(112, 8, 131);
 }

@@ -1,0 +1,21 @@
+.card {
+    background-color: rgb(170, 23, 200);
+    color: white;
+    width: 250px;
+    min-height: 50px;
+    padding: 5px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-color: rgb(112, 8, 131);
+}
+
+.card-content {
+    color: white;
+    font-family: cursive;
+}
