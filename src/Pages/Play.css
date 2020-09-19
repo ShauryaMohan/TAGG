@@ -1,0 +1,23 @@
+.PlayPage {
+    background-color: black;
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0px;
+}
+
+.Instructions {
+    color: white;
+    text-align: center;
+}
+
+.Instructions p {
+    margin: 40px 0px;
+}
+
+.Questions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px 10px;
+}
