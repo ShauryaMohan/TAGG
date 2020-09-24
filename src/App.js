@@ -21,7 +21,7 @@ function App() {
   const route = () => {
     switch(page){
       case "home": return <HomePage setPage={setPage} user={user}/>
-      case "submit": return <SubmitForm setPage={setPage} user={user}/>
+      case "submit": return <SubmitForm setPage={setPage} user={user} setQuestions={setQuestions}/>
       case "game":  return <Play setPage={setPage} questions={questions} setQuestionData={setQuestionData}/>
       case "question": return <QuestionPage setPage={setPage} questionData={questionData} wholeData={questions}/>
       default: return <div>error</div>

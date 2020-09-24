@@ -43,8 +43,8 @@ function QuestionPage({setPage, questionData, wholeData}){
           return <div className="AnswerContainer">
               <div className="Result"><h2>{isCorrect ? "Correct" : "Wrong!!"}</h2></div>
               <div className="QuestionDetails"><p>{`Submitted by:  ${questionData[0]["user_name"]} (${questionData[1]})`}</p></div>
-              <div className="AnswerImage"><img src={image} alt="Memory" height="240px" width="240px"/></div>
-              <div className="AnswerMemory"><h2>Memory:</h2>{questionData[0]["memory"]}</div>
+              <div className="AnswerImage"><img src={image} alt="Memory"  width="240px"/></div>
+              <div className="AnswerMemory"><h2>Message:</h2>{questionData[0]["memory"]}</div>
           </div>
       }
 

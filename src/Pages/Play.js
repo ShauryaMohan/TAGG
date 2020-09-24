@@ -20,7 +20,7 @@ function Play({setPage, questions, setQuestionData}) {
     return <div className="PlayPage">
         <div className = "Instructions">
             <h1>Instructions:</h1>
-            <p>These are some hints in the purple boxes that are related to one person. Click on the box to answer the question and see who actually wrote it...</p>
+            <p>Hints are given in the yellow boxes. These hints have been written by someone you know, and, it connects them to you in some way. Please tap on the box which you would like to answer (guess who wrote the hint). No scores are being kept, and once you answer, there is a surprise!!</p>
             <button onClick={()=> {setPage("home")}} className="rounded-button"> Home </button>
         </div>
         <div className = "Questions"><QuestionsCardList/></div>

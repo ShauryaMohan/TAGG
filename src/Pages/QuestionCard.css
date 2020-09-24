@@ -1,5 +1,5 @@
 .card {
-    background-color: rgb(170, 23, 200);
+    background-color:  rgb(228, 215, 38);
     color: white;
     width: 250px;
     min-height: 50px;
@@ -12,10 +12,10 @@
 }
 
 .card:hover {
-    background-color: rgb(112, 8, 131);
+    background-color: rgb(179, 153, 7);
 }
 
 .card-content {
     color: white;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
 }

@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 import {useForm, Controller} from 'react-hook-form'
-import {storeQuestion, storeImage} from '../firebase/firebase.utils'
+import {storeQuestion, storeImage, QuestionList} from '../firebase/firebase.utils'
 import './SubmitForm.css'
 
 
-function SubmitForm({user, setPage}) {
+function SubmitForm({user, setPage, setQuestions}) {
     const [imageValue, setImageValue] = useState(null);
     const [displayImage, setDisplayImage] = useState('#');
 
@@ -18,6 +18,9 @@ function SubmitForm({user, setPage}) {
     const onSubmit = (data) => {
         if(imageValue) {
             storeQuestion(user, data);
+            alert("Question submitted succesfully")
+            var temp = QuestionList();
+            setQuestions(temp);
             setPage("home")
         } else {
             alert("Please Select an Image")
@@ -25,7 +28,7 @@ function SubmitForm({user, setPage}) {
     }
 
     const onError = (error) => {
-        alert(error.message);
+        alert(error);
     }
 
     
@@ -59,7 +62,7 @@ function SubmitForm({user, setPage}) {
                 as={<textarea className="memoryField"/>}
                 name="memory"
                 autoComplete="off"
-                placeholder="Enter memory related to the photo you have uploaded"
+                placeholder="Enter a message for her birthday"
                 control={control}
                 rules={{ required: true }}/>
 
@@ -70,6 +73,7 @@ function SubmitForm({user, setPage}) {
                 
                 <center>
                 <button type="submit" className="submitButton"> Submit </button>
+                <button className="submitButton" onClick={()=>{setPage("home")}}>Back</button> 
                 </center>
             </form>
             </div>

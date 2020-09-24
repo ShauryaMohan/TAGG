@@ -12,7 +12,7 @@
     color: white;
    
     text-align: center;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -24,6 +24,7 @@
 .questionPart p {
     margin-right: 10%;
     margin-left: 10%;
+    font-family: monospace;
 }
 
 .questionPart .select {
@@ -39,7 +40,7 @@
     flex-wrap: wrap;
     flex-direction: column;
     color: white;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 

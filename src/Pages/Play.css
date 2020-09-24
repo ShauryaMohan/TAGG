@@ -12,6 +12,7 @@
 }
 
 .Instructions p {
+    font-family: monospace;
     margin: 40px 0px;
 }
 

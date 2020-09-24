@@ -37,7 +37,7 @@
 
 .TitleContainer p {
     color: white;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 50px;
     font-weight: 900;
 }
@@ -55,11 +55,11 @@
     width: 200px;
     padding: 10px;
     border-radius: 20px;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
     font-weight: 700;
     color: white;
     text-decoration: none;
-    background-color: rgb(170, 23, 200);
+    background-color: rgb(228, 215, 38);
     border: none;
     height: 40px;
     outline: none;
@@ -68,5 +68,5 @@
   }
 
   .rounded-button:hover {
-      background-color: rgb(112, 8, 131);
+      background-color: rgb(179, 153, 7);
   }
